@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WRONG WAY — Ghost Run</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game"></canvas>
+
+    <div id="wrongWaySign">⚠ WRONG WAY ⚠</div>
+
+    <div id="hud">
+      <div class="label">DISTANCE</div>
+      <div class="value" id="scoreVal">0m</div>
+      <div class="label" style="margin-top:6px;opacity:0.5;font-size:10px;">PRESS R TO RESET</div>
+    </div>
+
+    <div id="speedWrap">
+      <div class="label">SPEED</div>
+      <div class="value" id="speedVal">0</div>
+    </div>
+
+    <div id="touchControls">
+      <button id="btnLeft">◀</button>
+      <div class="sideGroup">
+        <button id="btnBrake">▼</button>
+        <button id="btnGas">▲</button>
+      </div>
+      <button id="btnRight">▶</button>
+    </div>
+
+    <div id="overlay">
+      <h1>WRONG WAY</h1>
+      <p>
+        You're going against traffic on a one-way night highway.
+        Hold <span class="kbd">W</span> to accelerate, <span class="kbd">S</span> to brake,
+        <span class="kbd">A</span> / <span class="kbd">D</span> to steer between lanes.
+        Squeeze past close calls for bonus distance. Press <span class="kbd">R</span> anytime to reset.
+      </p>
+      <button id="startBtn">START ENGINE</button>
+      <div id="finalScore" style="display:none;"></div>
+      <div id="bestScore"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
